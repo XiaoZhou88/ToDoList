@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TodoList</title>
+  <link rel="stylesheet" href="todoList.css">
+</head>
+<body>
+<div class="myhead">
+   <h2>My ToDo List</h2>
+  <table>
+    <tr>
+      <td><input type="text" placeholder="请输入待办事项..." id="things"></td>
+      <td> <span id="add" onclick="addElement()">add</span></td>
+    </tr>
+  </table>
+</div>
+
+  <ul id="todolist">
+
+  </ul>
+
+<div class="test2"></div>
+</body>
+<!--将JavaScript元素放在后面，否则在执行JavaScript的时候，dom树还未构建，会出现意想不到的错误-->
+<script src="todoList.js" type="text/javascript"></script>
+</html>
